@@ -5,214 +5,175 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume</title>
+  <title>Resume - Mohamed Yousuf</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="profile">
-      <div class="profile_container">
-        <div class="profile_profileImg">
-          <img src="./MOHAMED_YOUSUF_R.jpg" alt="Mohamed Yousuf">
-        </div>
-        <div>
-          <h1 class="profile_name">
-            <span class="profile_name_firstName">Mohamed</span>
-            <span class="profile_name_lastName">Yousuf</span>
-            </h1>
-            <p class="profile_title">Aspiring Software Developer</p>
-            <p class="description profile_description">
-              To work in a challenging and dynamic environment and to add values to the organisation through my 
-              skills and knowledge,
-            </p>
-          <a class="downloadBtn" href="./Mohamed_Yousuf_Resume.pdf" download="Resume.pdf">Download Resume</a>
-        </div>
+  <div class="container py-5">
+    <!-- Profile Section -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-3 text-center">
+        <img src="./MOHAMED_YOUSUF_R.jpg" alt="Mohamed Yousuf" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-md-9">
+        <h1 class="fw-bold">Mohamed <span class="text-primary">Yousuf</span></h1>
+        <h5 class="text-muted">Aspiring Software Developer</h5>
+        <p>To work in a challenging and dynamic environment and to add values to the organisation through my skills and knowledge.</p>
+        <a href="./Mohamed_Yousuf_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
       </div>
     </div>
-    <div class="group-1">
-      <div class="skills">
-        <h3 class="title">Expertise</h3>
-        <ul class="skills_list description">
-          <li>Java</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>BOOTSTRAP 5</li>
-          <li>SQL SERVER</li>
+
+    <!-- Skills & Workshop -->
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <h3 class="text-primary">Expertise</h3>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Java</li>
+          <li class="list-group-item">HTML</li>
+          <li class="list-group-item">CSS</li>
+          <li class="list-group-item">Bootstrap 5</li>
+          <li class="list-group-item">SQL Server</li>
         </ul>
       </div>
-      <div class="workshop">
-        <h3 class="title">Workshop</h3>
-          <h1 class="workshop_name">AWS DEVOPS WORKSHOP</h1>
-          <p class="description">Learning features of AWS platform</p>
-          <h2 class="creation">Creating a cloud database and storing information</>
-        </div>
-        
-
-      <div class="edu">
-        <h3 class="title">Education</h3>
-        <div class="edu_item">
-          <p class="item_preTitle">2019-2023</p>
-          <h4 class="item_title">B-TECH in IT</h4>
-          <p class="item_subtitle">
-            Anjalai Ammal Mahalingam Engineering College
-          </p>
-        </div>
-        <div class="edu_item">
-          <p class="item_preTitle">2019</p>
-          <h4 class="item_title">Class XII</h4>
-          <p class="item_subtitle">
-            International Indian School,Al-Khobar,Saudi Arabia
-          </p>
-        </div>
-        <div class="edu_item">
-            <p class="item_preTitle">2017</p>
-            <h4 class="item_title">Class X</h4>
-            <p class="item_subtitle">
-              International Indian School,Al-Khobar,Saudi Arabia
-            </p>
-          </div>
+      <div class="col-md-6">
+        <h3 class="text-primary">Workshop</h3>
+        <h5>AWS DevOps Workshop</h5>
+        <p>Learning features of AWS platform</p>
+        <p>Creating a cloud database and storing information</p>
       </div>
+    </div>
 
-      <div class="internship">
-        <h3 class="title">internship</h3>
-        <div class="certification_item">
-          <p class="item_preTitle">2023</p>
-          <h4 class="item_title">IBM-ICT ACADEMY PROJECT : Exploratory Analysis of Rain Fall Data in India for 
-            Agriculture</h4>
-          <p class="description">
-            It is used to analyse the rainfall using data science. Based on the previous rainfall 
-            dataset by IMD, We will use machine learning to say when it is time for agriculture,
-          </p>
+    <!-- Education -->
+    <div class="mb-5">
+      <h3 class="text-primary">Education</h3>
+      <div class="row mb-3">
+        <div class="col-md-3 text-muted">2019–2023</div>
+        <div class="col-md-9">
+          <h5 class="fw-bold">B-Tech in IT</h5>
+          <p>Anjalai Ammal Mahalingam Engineering College</p>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-3 text-muted">2019</div>
+        <div class="col-md-9">
+          <h5 class="fw-bold">Class XII</h5>
+          <p>International Indian School, Al-Khobar, Saudi Arabia</p>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-3 text-muted">2017</div>
+        <div class="col-md-9">
+          <h5 class="fw-bold">Class X</h5>
+          <p>International Indian School, Al-Khobar, Saudi Arabia</p>
         </div>
       </div>
     </div>
-    <div class="group-2">
-      <div class="projects">
-        <h3 class="title">Projects</h3>
-        <div class="proj_item">
-          <p class="item_preTitle">2022</p>
-          <h4 class="item_title">DATABANK ATHENEUM</h4>
-          <p class="item_subtitle">Mini Project</p>
-          <p class=" description">
-            The file based student application system has been very effective since many years . 
-            However, with the increase in the number of applicants, the education committee wastes a lot of 
-            time in terms of searching for the applicant record, in addition to requiring a large number of 
-            human resources which has led to high cost of operation. To solve such problems, this mobile app 
-            is developed to allow the user to apply for preferred colleges affiliated by Anna University and also 
-            the organization to save time and reduce on the cost of operation,
-          </p>
-        </div>
-        <div class="proj_item">
-          <p class="item_preTitle">2023</p>
-          <h4 class="item_title">ADMISSION PLUS : A FLUTTER BASED STUDENTS ENROLMENT SYSTEM</h4>
-          <p class="item_subtitle">Main Project</p>
-          <p class="description">
-            Admission Plus is an online student registration system that utilizes It is a mobile 
-application for students and University affiliated colleges that facilitates online application 
-process for management quota. It reduces the manpower needed to facilitate an enrolment 
-process. This application can be accessed by student and all the affiliated colleges,
-          </p>
-        </div>
-      </div>
-      <div class="achievements">
-        <h3 class="title">Achievements</h3>
-        <div class="achive_item">
-          <p class="item_preTitle">2024</p>
-          <h4 class="item_title">AWS Cloud Technical Essentials</h4>
-          <p class=" description">
-            Completed “AWS Cloud Technical Essentials” course on Coursera, gaining proficiency in 
-foundational cloud concepts and AWS services.       </p>
-        </div>
-        <div class="achive_item">
-          <p class="item_preTitle">2020</p>
-          <h4 class="item_title">Spoken Tutorial Project at IIT Bombay</h4>
-          <p class="description">
-            Participated in “Advanced Cpp” organized at Anjalai Ammal Mahalingam Engineering
-College by IIT BOMBAY,
-          </p>
-        </div>
-        <div class="achive_item">
-            <p class="item_preTitle">2023</p>
-            <h4 class="item_title">Comprehensive 
-Software Engineering Job Simulation</h4>
-            <p class="description">
-                Earned certification from JP Morgan and Forage for completing “Comprehensive 
-Software Engineering Job Simulation”,
-            </p>
-          </div>
-      </div>
-<div class="experience">
-  <h3 class="title">Work Experience</h3>
 
-  <div class="exp_item">
-    <p class="item_preTitle">March 2025 – Present</p>
-    <h4 class="item_title">Trainee</h4>
-    <p class="item_subtitle">Globe Marine Service, Dammam, Saudi Arabia</p>
-    <p class="description">
-      Working as Trainee</p>
-  </div>
-</div>
-<br>
-
-      <div class="interest">
-        <h3 class="title">Interest</h3>
-        <div class="interest_items">
-          <div class="interest_item">
-            <i data-feather="music"></i>
-            <span>Music</span>
-          </div>
-          <div class="interest_item">
-            <i data-feather="book"></i>
-            <span>Books</span>
-          </div>
-          <div class="interest_item">
-            <i data-feather="map"></i>
-            <span>Travel</span>
-          </div>
+    <!-- Internship -->
+    <div class="mb-5">
+      <h3 class="text-primary">Internship</h3>
+      <div class="row">
+        <div class="col-md-3 text-muted">2023</div>
+        <div class="col-md-9">
+          <h5 class="fw-bold">IBM-ICT Academy Project</h5>
+          <p>Exploratory Analysis of Rainfall Data in India for Agriculture using machine learning and IMD datasets.</p>
         </div>
-
       </div>
     </div>
+
+    <!-- Projects -->
+    <div class="mb-5">
+      <h3 class="text-primary">Projects</h3>
+      <div class="row mb-3">
+        <div class="col-md-3 text-muted">2022</div>
+        <div class="col-md-9">
+          <h5 class="fw-bold">Databank Atheneum</h5>
+          <p class="fst-italic">Mini Project</p>
+          <p>Mobile app for student applications to Anna University affiliated colleges, reducing manual effort and cost.</p>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-3 text-muted">2023</div>
+        <div class="col-md-9">
+          <h5 class="fw-bold">Admission Plus</h5>
+          <p class="fst-italic">Main Project</p>
+          <p>Flutter-based mobile app for student registration and management quota application across affiliated colleges.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="mb-5">
+      <h3 class="text-primary">Achievements</h3>
+      <div class="row mb-3">
+        <div class="col-md-3 text-muted">2024</div>
+        <div class="col-md-9">
+          <h5 class="fw-bold">AWS Cloud Technical Essentials</h5>
+          <p>Completed foundational cloud concepts and AWS services course on Coursera.</p>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-3 text-muted">2020</div>
+        <div class="col-md-9">
+          <h5 class="fw-bold">Spoken Tutorial Project</h5>
+          <p>Participated in Advanced C++ workshop by IIT Bombay.</p>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-3 text-muted">2023</div>
+        <div class="col-md-9">
+          <h5 class="fw-bold">Software Engineering Job Simulation</h5>
+          <p>Completed simulation by JP Morgan and Forage.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="mb-5">
+      <h3 class="text-primary">Work Experience</h3>
+      <div class="row">
+        <div class="col-md-3 text-muted">March 2025 – Present</div>
+        <div class="col-md-9">
+          <h5 class="fw-bold">Trainee</h5>
+          <p>Globe Marine Service, Dammam, Saudi Arabia</p>
+          <p>Working as Trainee</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interests -->
+    <div class="mb-5">
+      <h3 class="text-primary">Interests</h3>
+      <div class="d-flex gap-4">
+        <div><i data-feather="music"></i> Music</div>
+        <div><i data-feather="book"></i> Books</div>
+        <div><i data-feather="map"></i> Travel</div>
+      </div>
+    </div>
+
     <hr>
-    <div class="group-3">
-      <div class="contact">
-        <h3 class="title">Contact</h3>
-        <div class="contact_info">
-          <p class="description">
-            Chennai, India
-          </p>
-          <p class="description">
-            +91 9150186224
-          </p>
-          <p class="description">
-            yousufmohamed525@gmail.com
-          </p>
-        </div>
+
+    <!-- Contact & Social -->
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="text-primary">Contact</h3>
+        <p>Chennai, India</p>
+        <p>+91 9150186224</p>
+        <p>yousufmohamed525@gmail.com</p>
       </div>
-      <div class="social">
-        <h3 class="title">Socials</h3>
-        <div class="social_items">
-          <a href="https://github.com/MOHAMEDYOUSUF36" target="_b" class="social_item">
-            <i data-feather="github"></i>
-            <span>/MOHAMEDYOUSUF36</span>
-          </a>
-          
-          <a href="https://www.linkedin.com/in/mohamed-yousuf-r-5652a5268/" target="_blank" class="social_item">
-            <i data-feather="linkedin"></i>
-            <span>/mohamed-yousuf-r-5652a5268</span>
-          </a>
-        </div>
+      <div class="col-md-6">
+        <h3 class="text-primary">Socials</h3>
+        <p><i data-feather="github"></i> <a href="https://github.com/MOHAMEDYOUSUF36" target="_blank">/MOHAMEDYOUSUF36</a></p>
+        <p><i data-feather="linkedin"></i> <a href="https://www.linkedin.com/in/mohamed-yousuf-r-5652a5268/" target="_blank">/mohamed-yousuf-r-5652a5268</a></p>
       </div>
     </div>
   </div>
+
   <script>
     feather.replace()
   </script>
 </body>
 
 </html>
-
-
-
